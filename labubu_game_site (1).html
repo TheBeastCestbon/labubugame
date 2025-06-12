@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labubu Game - Play Free Online Labubu Games | labubugame.space</title>
+    <meta name="description" content="Play the best Labubu games online for free! Experience Labubu Energy and create your own monster in these exciting browser games. No download required.">
+    <meta name="keywords" content="labubu game, labubu energy, labubu monster, online games, free games, browser games">
+    <link rel="canonical" href="https://labubugame.space/">
+    <meta property="og:title" content="Labubu Game - Play Free Online Labubu Games">
+    <meta property="og:description" content="Discover amazing Labubu games! Play Labubu Energy and create your own monster. Free online gaming experience.">
+    <meta property="og:url" content="https://labubugame.space/">
+    <meta property="og:type" content="website">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .tab-active {
+            background: linear-gradient(135deg, #007AFF, #5856D6);
+            color: white;
+            box-shadow: 0 4px 15px rgba(0, 122, 255, 0.3);
+        }
+        
+        .tab-inactive {
+            background: rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .tab-inactive:hover {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+        
+        .game-iframe {
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .hero-text {
+            background: linear-gradient(135deg, #FF6B6B, #4ECDC4, #45B7D1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        @media (max-width: 768px) {
+            .game-iframe {
+                height: 400px !important;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <!-- Header Section -->
+        <header class="text-center mb-12">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 hero-text">
+                Labubu Game
+            </h1>
+            <p class="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed">
+                Dive into the magical world of Labubu with our collection of exciting online games. Play for free, no downloads required!
+            </p>
+        </header>
+
+        <!-- Game Selection Tabs -->
+        <div class="glass-card rounded-3xl p-8 mb-8">
+            <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                <button 
+                    onclick="switchGame('energy')" 
+                    id="tab-energy" 
+                    class="tab-active flex-1 py-4 px-6 rounded-2xl font-semibold text-lg transition-all duration-300 transform hover:scale-105"
+                >
+                    🔥 Labubu Energy
+                </button>
+                <button 
+                    onclick="switchGame('monster')" 
+                    id="tab-monster" 
+                    class="tab-inactive flex-1 py-4 px-6 rounded-2xl font-semibold text-lg transition-all duration-300 transform hover:scale-105"
+                >
+                    👾 Create Your Monster
+                </button>
+            </div>
+
+            <!-- Game Content -->
+            <div id="game-energy" class="animate-fade-in">
+                <div class="text-center mb-6">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Labubu Energy</h2>
+                    <p class="text-lg text-white/80 max-w-2xl mx-auto">
+                        Energize your Labubu character and embark on thrilling adventures in this action-packed game!
+                    </p>
+                </div>
+                
+                <div class="w-full h-96 md:h-[600px] game-iframe bg-gradient-to-br from-blue-500/20 to-purple-600/20 flex flex-col items-center justify-center text-center p-8">
+                    <div class="mb-6">
+                        <div class="text-6xl mb-4">🎮</div>
+                        <h4 class="text-2xl font-bold text-white mb-4">Ready to Play Labubu Energy?</h4>
+                        <p class="text-white/80 mb-6">Click the button below to start your adventure!</p>
+                    </div>
+                    <a href="https://playhop.com/app/438351" 
+                       target="_blank" 
+                       class="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-bold py-4 px-8 rounded-2xl text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+                        🚀 Play Labubu Energy Now
+                    </a>
+                    <p class="text-white/60 text-sm mt-4">Opens in a new tab for the best gaming experience</p>
+                </div>
+                
+                <div class="mt-8 bg-white/10 rounded-2xl p-6">
+                    <h3 class="text-2xl font-semibold text-white mb-4">About Labubu Energy</h3>
+                    <p class="text-white/90 leading-relaxed">
+                        Labubu Energy is an exciting adventure game where you control the beloved Labubu character through various challenging levels. 
+                        Collect energy orbs, overcome obstacles, and unlock new abilities as you progress through this captivating gaming experience. 
+                        The game features stunning visuals, smooth gameplay mechanics, and endless entertainment for players of all ages.
+                    </p>
+                </div>
+            </div>
+
+            <div id="game-monster" class="animate-fade-in hidden">
+                <div class="text-center mb-6">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Labubu Create Your Own Monster</h2>
+                    <p class="text-lg text-white/80 max-w-2xl mx-auto">
+                        Unleash your creativity and design unique Labubu monsters with endless customization options!
+                    </p>
+                </div>
+                
+                <div class="w-full h-96 md:h-[600px] game-iframe bg-gradient-to-br from-green-500/20 to-blue-600/20 flex flex-col items-center justify-center text-center p-8">
+                    <div class="mb-6">
+                        <div class="text-6xl mb-4">👾</div>
+                        <h4 class="text-2xl font-bold text-white mb-4">Create Your Own Monster!</h4>
+                        <p class="text-white/80 mb-6">Unleash your creativity and design unique creatures!</p>
+                    </div>
+                    <a href="https://playhop.com/app/441201" 
+                       target="_blank" 
+                       class="bg-gradient-to-r from-green-500 to-blue-600 hover:from-green-600 hover:to-blue-700 text-white font-bold py-4 px-8 rounded-2xl text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+                        🎨 Create Monster Now
+                    </a>
+                    <p class="text-white/60 text-sm mt-4">Opens in a new tab for the best gaming experience</p>
+                </div>
+                
+                <div class="mt-8 bg-white/10 rounded-2xl p-6">
+                    <h3 class="text-2xl font-semibold text-white mb-4">About Create Your Own Monster</h3>
+                    <p class="text-white/90 leading-relaxed">
+                        Dive into the creative world of Labubu monster creation! This innovative game allows you to design and customize your very own Labubu creatures. 
+                        Mix and match different body parts, colors, accessories, and special features to bring your imagination to life. 
+                        Share your creations with friends and discover endless possibilities in this user-friendly creation tool that sparks creativity and provides hours of entertainment.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <section class="glass-card rounded-3xl p-8 mb-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-8">Why Choose Our Labubu Games?</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="text-center p-6 bg-white/10 rounded-2xl">
+                    <div class="text-4xl mb-4">🎮</div>
+                    <h3 class="text-xl font-semibold text-white mb-3">Instant Play</h3>
+                    <p class="text-white/80">No downloads or installations required. Start playing immediately in your browser.</p>
+                </div>
+                <div class="text-center p-6 bg-white/10 rounded-2xl">
+                    <div class="text-4xl mb-4">📱</div>
+                    <h3 class="text-xl font-semibold text-white mb-3">Mobile Friendly</h3>
+                    <p class="text-white/80">Optimized for all devices - play on desktop, tablet, or mobile phone.</p>
+                </div>
+                <div class="text-center p-6 bg-white/10 rounded-2xl">
+                    <div class="text-4xl mb-4">🆓</div>
+                    <h3 class="text-xl font-semibold text-white mb-3">Completely Free</h3>
+                    <p class="text-white/80">Enjoy all our Labubu games without any cost or hidden fees.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Game Instructions -->
+        <section class="glass-card rounded-3xl p-8 mb-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-8">How to Play</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white/10 rounded-2xl p-6">
+                    <h3 class="text-2xl font-semibold text-white mb-4">🔥 Labubu Energy</h3>
+                    <ul class="text-white/90 space-y-2">
+                        <li>• Use arrow keys or touch controls to move your Labubu character</li>
+                        <li>• Collect energy orbs to power up your abilities</li>
+                        <li>• Avoid obstacles and enemies throughout the levels</li>
+                        <li>• Complete challenges to unlock new stages</li>
+                    </ul>
+                </div>
+                <div class="bg-white/10 rounded-2xl p-6">
+                    <h3 class="text-2xl font-semibold text-white mb-4">👾 Create Your Monster</h3>
+                    <ul class="text-white/90 space-y-2">
+                        <li>• Click on different body parts to customize your monster</li>
+                        <li>• Choose from various colors, patterns, and accessories</li>
+                        <li>• Mix and match features to create unique designs</li>
+                        <li>• Save and share your monster creations</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center py-8">
+            <p class="text-white/70 text-lg">
+                © 2025 labubugame.space - Your ultimate destination for Labubu games online
+            </p>
+            <p class="text-white/50 mt-2">
+                Play responsibly and have fun with our collection of free Labubu games!
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        function switchGame(gameType) {
+            // Hide both games
+            document.getElementById('game-energy').classList.add('hidden');
+            document.getElementById('game-monster').classList.add('hidden');
+            
+            // Reset tab styles
+            document.getElementById('tab-energy').className = 'tab-inactive flex-1 py-4 px-6 rounded-2xl font-semibold text-lg transition-all duration-300 transform hover:scale-105';
+            document.getElementById('tab-monster').className = 'tab-inactive flex-1 py-4 px-6 rounded-2xl font-semibold text-lg transition-all duration-300 transform hover:scale-105';
+            
+            // Show selected game and activate tab
+            if (gameType === 'energy') {
+                document.getElementById('game-energy').classList.remove('hidden');
+                document.getElementById('tab-energy').className = 'tab-active flex-1 py-4 px-6 rounded-2xl font-semibold text-lg transition-all duration-300 transform hover:scale-105';
+            } else {
+                document.getElementById('game-monster').classList.remove('hidden');
+                document.getElementById('tab-monster').className = 'tab-active flex-1 py-4 px-6 rounded-2xl font-semibold text-lg transition-all duration-300 transform hover:scale-105';
+            }
+        }
+        
+        // Add smooth scrolling for better UX
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', function() {
+                this.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                }, 150);
+            });
+        });
+    </script>
+</body>
+</html>
